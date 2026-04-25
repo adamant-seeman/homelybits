@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background_cream">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+            android:background="@color/primary" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+            <ImageView android:id="@+id/btnBack" android:layout_width="24dp" android:layout_height="24dp"
+                android:src="@drawable/ic_back" app:tint="@color/white" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="16dp" android:text="@string/change_address"
+                android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <com.google.android.material.textfield.TextInputLayout style="@style/AppTextInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" android:hint="@string/address_line1">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etAddressLine1"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout style="@style/AppTextInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" android:hint="@string/address_line2">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etAddressLine2"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout style="@style/AppTextInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" android:hint="@string/city">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etCity"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout style="@style/AppTextInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" android:hint="@string/pincode">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPincode"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnSave"
+                style="@style/AppButton.Primary" android:layout_width="match_parent" android:layout_height="52dp"
+                android:text="@string/save_address" />
+            <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:layout_marginTop="16dp" android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <!-- Chef hat body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,15c-8,0 -15,5 -17,12c-4,1 -7,5 -7,10c0,6 5,10 10,10h28c5,0 10,-4 10,-10c0,-5 -3,-9 -7,-10c-2,-7 -9,-12 -17,-12z"/>
+    <!-- Hat band -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M26,47h28v4h-28z"/>
+    <!-- Apron -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28,51h24v18c0,2 -2,4 -4,4h-16c-2,0 -4,-2 -4,-4z"/>
+</vector>

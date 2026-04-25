@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_cream">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:background="@color/primary" android:gravity="center_vertical" android:paddingHorizontal="16dp">
+        <ImageView android:id="@+id/btnBack" android:layout_width="24dp" android:layout_height="24dp"
+            android:src="@drawable/ic_back" app:tint="@color/white" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" android:text="@string/order_summary"
+            android:textColor="@color/white" android:textSize="18sp" android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <!-- Kitchen Name -->
+            <TextView android:id="@+id/tvKitchenName" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" android:layout_marginBottom="16dp" />
+
+            <!-- Order Items -->
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp" app:cardElevation="4dp" app:cardBackgroundColor="@color/surface_white">
+                <LinearLayout android:id="@+id/layoutItems" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Delivery Address -->
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp" app:cardElevation="4dp" app:cardBackgroundColor="@color/surface_white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/delivery_address" android:textSize="16sp"
+                        android:textStyle="bold" android:textColor="@color/text_primary" />
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AppTextInput"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:hint="@string/enter_address">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etAddress"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:inputType="textMultiLine" android:minLines="2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Payment Method -->
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp" app:cardElevation="4dp" app:cardBackgroundColor="@color/surface_white">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/payment_method" android:textSize="16sp"
+                        android:textStyle="bold" android:textColor="@color/text_primary"
+                        android:layout_marginBottom="8dp" />
+                    <RadioGroup android:id="@+id/rgPayment" android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton android:id="@+id/rbUPI" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:text="@string/upi_phonepe"
+                            android:checked="true" android:buttonTint="@color/primary" />
+                        <RadioButton android:id="@+id/rbCOD" android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:text="@string/cash_on_delivery"
+                            android:buttonTint="@color/primary" />
+                    </RadioGroup>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Total + Place Order -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/surface_white" android:elevation="8dp" android:gravity="center_vertical"
+        android:orientation="horizontal" android:padding="16dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/total" android:textSize="13sp" android:textColor="@color/text_secondary" />
+            <TextView android:id="@+id/tvTotal" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPlaceOrder"
+            style="@style/AppButton.Primary" android:layout_width="wrap_content" android:layout_height="52dp"
+            android:text="@string/place_order" android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomelyBites</string>
+    <string name="welcome_message">Delicious Homemade Food at Your Doorstep</string>
+    <string name="role_customer">I am a Customer</string>
+    <string name="role_cook">I am a Cook</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+
+    <!-- Auth -->
+    <string name="email_hint">Email or Phone</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="name_hint">Full Name</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="kitchen_name_hint">Kitchen Name</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="continue_as_cook">Continue as Cook</string>
+    <string name="continue_as_customer">Continue as Customer</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_email_sent">Password reset email sent!</string>
+    <string name="check_your_email">Check your email for the reset link</string>
+
+    <!-- Home -->
+    <string name="hello_greeting">Hello %1$s!</string>
+    <string name="search_hint">Search for dishes or kitchens…</string>
+    <string name="cloud_kitchens_near_you">Cloud Kitchens Near You</string>
+    <string name="categories">Categories</string>
+    <string name="north_indian">North Indian</string>
+    <string name="south_indian">South Indian</string>
+    <string name="chinese">Chinese</string>
+    <string name="desserts">Desserts</string>
+    <string name="snacks">Snacks</string>
+    <string name="beverages">Beverages</string>
+    <string name="view_all">View All</string>
+
+    <!-- Kitchen Detail -->
+    <string name="menu">Menu</string>
+    <string name="request_meal">Request Meal</string>
+    <string name="add_to_order">Add to Order</string>
+    <string name="order_now">Order Now</string>
+
+    <!-- Order -->
+    <string name="order_summary">Order Summary</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="place_order">Place Order</string>
+    <string name="total">Total</string>
+    <string name="upi_phonepe">UPI / PhonePe</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+
+    <!-- Rating -->
+    <string name="rate_your_experience">Rate Your Experience</string>
+    <string name="write_review">Write a review…</string>
+    <string name="submit_review">Submit Review</string>
+
+    <!-- Cook Dashboard -->
+    <string name="cook_dashboard">Cook Dashboard</string>
+    <string name="requests">Requests</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="no_pending_requests">No pending requests</string>
+    <string name="add_dish">Add Dish</string>
+    <string name="edit_dish">Edit Dish</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="price">Price (₹)</string>
+    <string name="servings">Servings Available</string>
+    <string name="select_day">Select Day</string>
+    <string name="save_dish">Save Dish</string>
+    <string name="delete_dish">Delete Dish</string>
+    <string name="weekly_menu">Weekly Menu</string>
+
+    <!-- Order History -->
+    <string name="order_history">Order History</string>
+    <string name="status_waiting">Waiting</string>
+    <string name="status_accepted">Accepted</string>
+    <string name="status_ongoing">Ongoing</string>
+    <string name="status_delivered">Delivered</string>
+    <string name="status_rejected">Rejected</string>
+
+    <!-- Reliability Score -->
+    <string name="reliability_score">Reliability Score</string>
+    <string name="orders_completed">Orders Completed</string>
+    <string name="average_rating">Average Rating</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="favorites">Favorites</string>
+    <string name="help_center">Help Center</string>
+    <string name="become_a_cook">Become a Local Cook</string>
+    <string name="change_address">Change Address</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="orders">Orders</string>
+    <string name="rating">Rating</string>
+
+    <!-- Become Cook -->
+    <string name="kitchen_address">Kitchen Address</string>
+    <string name="speciality_hint">Speciality (e.g., North Indian, Chinese)</string>
+    <string name="fssai_hint">FSSAI Number (if available)</string>
+    <string name="register_kitchen">Register Kitchen</string>
+
+    <!-- Help Center -->
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="search_help">Search for help…</string>
+    <string name="faq_q1">How do I place an order?</string>
+    <string name="faq_a1">Browse kitchens near you, select dishes, and tap Place Order. You can pay via UPI or Cash on Delivery.</string>
+    <string name="faq_q2">How do I become a cook?</string>
+    <string name="faq_a2">Go to Profile > Become a Local Cook and fill out the registration form with your kitchen details.</string>
+    <string name="faq_q3">How do I track my order?</string>
+    <string name="faq_a3">Go to Profile > My Orders to see the status of all your orders.</string>
+    <string name="faq_q4">How do I cancel an order?</string>
+    <string name="faq_a4">You can contact the kitchen directly. Orders in \"Waiting\" status can be cancelled.</string>
+
+    <!-- Change Address -->
+    <string name="enter_address">Enter your address</string>
+    <string name="save_address">Save Address</string>
+    <string name="address_line1">Address Line 1</string>
+    <string name="address_line2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- General -->
+    <string name="loading">Loading…</string>
+    <string name="error_occurred">An error occurred. Please try again.</string>
+    <string name="no_data">No data available</string>
+    <string name="success">Success!</string>
+    <string name="km_away">%1$.1f km away</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="rupee_format">₹%1$.0f</string>
+</resources>
